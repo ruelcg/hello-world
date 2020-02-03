@@ -1,0 +1,39 @@
+--------------------------------- VIM CHEATSHEET -------------------------------
+________________________________________________________________________________
+---------Inserting and Appending--------|----------------Editing----------------|
+----------------------------------------|---------------------------------------|
+a: append after current position	|r: replace single character		|
+i: INSERT before current position	|J: join line below with current line	|
+I: Go to beginning of line and INSERT	|cc: replace current line		|
+A: Go to end of line and INSERT		|cw: replace current word		|
+o: Create a new line below current line	|s: replace character			|
+O: Create new line above current line	|u: undo				|
+----------------------------------------|Ctrl+r: redo				|
+--------------- Movement ---------------|. : repeat last command		|
+----------------------------------------|					|
+G: Go to end of file			|D/d$: cut from cursor to end of line	|
+gg: Go to first line in file		|d^: cut from cursor to start of line	|
+^: jump to start of current line	|dd: cut current line			|
+$: jump to end of current line		|dw: cut current word			|
+					|x: cut current char			|
+w/W: jump to start of next word		|---------------------------------------|
+b/B: jump backward a word		|-------------Visual Mode---------------|
+e/E: jump forward to end of next word	|---------------------------------------|
+					|V: line based visual mode		|
+}: jump to next paragraph		|v: char based visual mode		|
+{: jump to previous paragraph		|d: cut visual selection		|
+					|y: yank (copy) visual selection	|
+fx: jump to next occurance of char	|p/P: paste visual selection after/bef	|
+Fx: jump to previous occurance of char	|>/<: shift text right/left		|
+;: repeat previous F/f forward		|~: switch case				|
+u: repeat previous F/f backward		|					|
+----------------------------------------|---------------------------------------|
+-----------Search and replace-----------|
+----------------------------------------|
+/pattern: search for pattern		|
+?pattern: search backward		|
+n: repeat in same direction		|
+N: repeat in opposite direction		|
+:%s/old/new/g: replace all old with new	|
+:%s/old/new/gc: replace all w/confirms	|
+-----------------------------------------
